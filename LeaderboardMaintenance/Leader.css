@@ -1,0 +1,694 @@
+html,body {
+   margin:0;
+   padding:0;
+   height:100%;
+   min-width:1200px;
+}
+code{
+	padding: 0.2em 0.4em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(27,31,35,0.05);
+    border-radius: 3px;
+}
+
+a:link {
+    color:black;
+}
+
+a:visited {
+    color:black;
+}
+
+.AdWrapper {
+	text-align: center;
+	margin-top:10px;
+	margin-bottom:10px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#bod{
+    margin:0px;
+    padding-bottom:0px;
+	
+}
+#wrapper {
+   min-height:100%;
+   position:relative;
+}
+#maindiv {
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	padding-bottom:275px;
+}
+
+#headerbg{
+    margin:0px;
+    padding:0px;
+    height:130px;
+	min-width:1263px;
+    background-color:#c5d1e5;
+    margin-bottom:4px;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      95% 100%,
+      0 100%
+    );
+}
+#header{
+    margin-left:auto; 
+    margin-right:auto; 
+    width:1200px;
+}
+
+#sublogo-wrapper{
+    width:auto;
+    float:left;
+}
+
+#sublogo{
+	position:relative;
+	float:left;
+	max-height:130px;
+}
+
+#headercontent{
+    display:inline-block;
+    width:auto;
+    height:auto;
+}
+
+#vikingpic{
+	display: block;
+    margin: 0 auto;
+}
+
+#subtle{
+	font-family:arial, sans-serif;
+	font-size:70px;
+	height:75px;
+	font-weight:900;
+	line-height:normal;
+	text-indent:25px;
+	margin:0;
+	padding:0;
+	color: black;
+	text-shadow: 0px 3px 7px #555;
+}
+
+#board{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+    width: 1200px;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    min-height: 400px;
+}
+
+#compare{
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	margin-top:50px;
+	margin-bottom:50px;
+	margin-left:auto;
+    margin-right:auto; 
+    width:1200px;
+}
+
+#search{
+	margin-left:200px;
+    margin-bottom:6px;
+    display:inline-block;
+}
+
+/***** start google charts *****/
+#SPGChartWrapper{
+	display:flex;
+	width:1200px;
+	height:400px;
+}
+
+.SSpreloader {
+    display: flex;
+    height: 400px;
+    width: 600px;
+    background-image: url(loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.preloader {
+    display: flex;
+    height: 600px;
+    width: 1200px;
+    background-image: url(loading.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Google Charts API likes to leave gaps for legend and vertical titles.
+   This part forces the right chart to be closer to center*/
+#SPGChart_GamesPlayed_div{
+	margin-left: 45px;
+}
+
+#GChart{
+	margin-top:45px;
+	text-align:center;
+}
+
+[id^="GChart_"]{
+	width:1200px;
+	height:600px;
+	margin-bottom:55px;
+	overflow: hidden;
+}
+/***** end google charts *****/
+
+.topLink{
+	-moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	box-shadow:inset 0px 1px 0px 0px #7a8eb9;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
+	background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
+	background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
+	background-color:#637aad;
+	border:1px solid #314179;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:13px;
+	font-weight:bold;
+	padding:3px 8px;
+	text-decoration:none;
+	border-radius:3px;
+}
+.topLink:hover{
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
+	background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
+	background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
+	background-color:#5972a7;
+
+}
+.topLink:active{
+	position:relative;
+	top:1px;
+}
+
+.topLink:link{
+    color:#FFFFFF;
+}
+.topLink:visited{
+    color:#FFFFFF;
+}
+
+#nav{
+    margin-top:2px;
+	margin-left:45px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+}
+
+
+#next{
+	margin-left:45px;
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+#nonext{
+	margin-left:45px;
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+#prev{
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left:4px;
+}
+#noprev{
+    border: solid grey;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    margin-left:4px;
+}
+
+#info{
+	height:250px;
+	position:absolute;
+	bottom:0;
+	width:100%;
+	min-width:1290px;
+	padding-bottom:25px;
+    background-color:#c5d1e5;
+    clip-path: polygon(
+      0 0,
+      93% 0,
+      100% 100%,
+      0 100%
+    );
+}
+
+#infotext{
+	padding-top:25px;
+	padding-left:45px;
+	padding-bottom:1px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:14px;
+	line-height:15px;
+    margin-left:auto; 
+    margin-right:auto; 
+    width:1200px;
+}
+
+#right{
+    width: 20; 
+    height: 20; 
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-left: 20px solid green;
+}
+
+p.infotext {
+    margin-top:-5px;
+}
+
+table {
+	margin-top:0px;
+	margin-bottom:20px;
+	font-family:"Trebuchet MS", Helvetica, sans-serif;
+	font-size:12px;
+    border-collapse: collapse;
+    width: 100%;
+	table-layout: fixed;
+}
+
+caption {
+	text-align:left;
+	font-size:21px;
+	font-weight:bold;
+	padding:8px;
+}
+
+
+.tablecaption {
+	margin-bottom:10px;
+    font-size:28px;
+	font-weight:bold;
+	width:100%;
+	float:left;
+	display:inline;
+}
+
+.tinytext {font-size:10px;}
+
+tr:hover{
+    background-color:#f5f5f5
+}
+
+tr.overallrow {
+    background-color:#f5f5f5;
+    font-size: 110%;
+    font-weight: bold;
+}
+tr.overalltable {
+    font-size: 110%;
+    font-weight: bold;
+}
+
+th {
+	background-color:#d7d7d7;
+	height: 35px;
+	font-size:13px;
+	line-height:110%;   /* this is necessary so the tablesort doesn't nudge it larger */
+    padding-bottom: 6px;
+    text-align: left;
+    vertical-align: bottom;
+    border-bottom: 1px solid #ddd;
+	border-top: 1px solid #ddd;
+}
+
+
+td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    
+}
+/*unit leaderboard table*/
+th.urank {
+    width: 1%;
+    padding-left: 8px;
+}
+td.urank {
+	padding-left: 8px;
+	text-align: left;
+}
+th.utag {
+    width: 1%;
+    padding-left: 10px;
+}
+td.utag {
+	padding-left: 8px;
+	text-align: left;
+}
+th.uname {
+    width: 5%;
+}
+td.uname {
+	text-align: left;
+}
+th.umembers {
+    width: 2%;
+    padding-left: 8px;
+}
+td.umembers {
+	text-align: left;
+	padding-left: 28px;
+}
+th.uadms {
+    width: 3%;
+    padding-left: 8px;
+	text-align: center;
+}
+td.uadms {
+	text-align: center;
+	padding-left: 8px;
+}
+th.uams {
+    width: 3%;
+    padding-left: 8px;
+	text-align: center;
+}
+td.uams {
+	padding-left: 8px;
+	text-align: center;
+}
+th.uwl {
+    width: 2%;
+	text-align: center;
+}
+td.uwl {
+	text-align: center;
+}
+th.ugp {
+	padding-left: 8px;
+    width: 2%;
+}
+td.ugp {
+	text-align: right;
+	padding-right: 50px;
+}
+
+th.seasonnumber {
+    width: 6%;
+    padding-left: 8px;
+}
+td.seasonnumber {
+	padding-left: 8px;
+	text-align: left;
+}
+
+th.rank {
+    width: 6%;
+    padding-right:10px;
+    text-align:right;
+}
+th.arank,td.arank {
+    text-align:center;
+}
+td.rank {
+	padding-right: 10px;
+	text-align: right;
+}
+
+th.prank {
+    width: 8%;
+    padding-left:10px;
+}
+
+td.prank {
+	text-align: left;
+	padding-left:25px;
+}
+th.aprank,td.aprank {
+	text-align:center;
+}
+
+th.name {
+    padding-left:8px;
+    width: 15%;
+}
+td.name {
+  
+  text-align:left;
+}
+
+th.wins {
+  width: 6%;
+}
+td.wins {
+	padding-right: 30px;
+	text-align: right;
+}
+
+th.sr {
+    width: 6%;
+    text-align: center;
+}
+th.asr {
+    text-align:center;
+}
+td.sr {
+	text-align: center;
+}
+td.asr {
+	text-align: center;
+}
+
+th.wr {
+  width: 5%;
+}
+td.wr {
+  padding-right: 30px;
+	text-align: right;
+}
+
+th.wlr {
+  width: 7%;
+  text-align:center;
+}
+
+th.awlr {
+  text-align:center;
+}
+
+td.wlr, td.awlr {
+	text-align: center;
+}
+
+th.kills {
+  width: 6%;
+}
+td.kills {
+	padding-right: 30px;
+	text-align: right;
+}
+
+th.deaths {
+  width: 7.5%;
+}
+td.deaths {
+	padding-right: 35px;
+	text-align: right;
+}
+td.adeaths{
+	padding-left: 15px;
+}
+
+th.kd, td.kd {
+    width: 7%;
+    text-align:center;
+}
+th.akd {
+    width: 8%;
+    text-align:center;
+}
+td.akd {
+    text-align:center;
+}
+
+th.gplayed {
+    width: 7.5%;
+    padding-left:15px;
+}
+td.gplayed {
+	padding-right: 40px;
+	text-align: right;
+}
+th.agplayed {
+    text-align:center;
+}
+td.agplayed{
+	text-align:center;
+}
+
+th.avgscore {
+    width: 7%;
+    text-align:center;
+}
+
+td.avgscore {
+	text-align:center;
+}
+
+th.aavgscore,td.aavgscore {
+	text-align:center;
+}
+
+th.adjscore {
+    width: 7%;
+    text-align:center;
+}
+td.adjscore {
+	text-align:center;
+}
+th.aadjscore,td.aadjscore{
+	text-align:center;
+}
+
+th.prog,td.prog {
+    width: 7%;
+	text-align: center;
+}
+
+th.aprog,td.aprog{
+	text-align: center;
+}
+
+td.percentclass, th.percentclass {
+    width: 7%;
+    text-align:center;
+}
+
+#error{
+    text-align: center;
+}
+
+
+/*
+Nothing to do here
+---------xXXXXXXXXXXXxx--------------
+------xXX^----------^^XXx------------
+----xX^----------------^XX-----------
+--xX^--------------------^Xx---------
+-X^--XX--------------XX---^XX--------
+X^--------------------------XX-------
+X--XXXXXXXXXXXXXXXXXXX-------X-------
+X----------------------------X-------
+X----------------------------X-------
+Xx---------------------------X-------
+^Xx-------------------------XX-------
+--^Xx--------------------xX^---------
+-----^Xx--------------xX^------------
+-------^Xxxx------xxxXXXXXXXxx-------
+--------XXXXXXXXXXXXXXX---^XXXXXXx---
+-----xXXX^^--------^XXXx------X-XXX--
+---xXXXx-----xxxx----XXX----xxXXXX^--
+-xXXX00X-----X00X---XXXXXXXXXXXX^----
+-^^XX^^^^^^^^^^XXXXXXXXXXX----X------
+----X-xxxxxxxxX^X00-----XX----X------
+----X-X-------X-X-00----XX----X------
+----XxX-------XxX--00000XXXxxxX------
+------------------------XX----------
+------------------------XX---xXXXx---
+------------------------XX-xXX000XX--
+---------------xXXXXXXXXXX-X000X00XXx
+-------------xXX^---^^XXX--X000XX000X
+-xXXXXXXXx--XXX---xxXXXX---XX00XXXX0X
+xXX^--^^XXXXXXXXXXXXX^^-----XX0000XXX
+XX^---------XX--------------XX0XX0XXX
+XX----------XXX--------------XXXXX-XX
+XX-----------XXX--------------X-XX--X
+XX------------XX-----------------X---
+XX-------------XX--------------------
+XX-------------XXX-------------------
+XXX-------------XXXxx----------------
+-XXX-------------^^XXX---------------
+--XXX--------------------------------
+*/
+
+/*
+                                      DamnitChi                                         
+                                  mmy!DamnitChimmy!                                     
+                              DamnitChimmy!DamnitChimm                                  
+                      y!DamnitChimmy!           DamnitCh                                
+                   immy!DamnitCh                  immy!Da                               
+                 mnitChimmy!Damn                   itChim                               
+                 my!DamnitChimmy!                   Damni                               
+                 tChimmy!Dam nitChi    mmy!DamnitC  himmy                               
+                 !DamnitChimmy!Damni tChimmy!DamnitC himm                               
+                 y!DamnitChimmy!Da  mnitChimmy!DamnitChim                               
+                my!Da  mnitChimmy!  DamnitChimmy!DamnitCh                               
+               immy!DamnitChimmy!Da mnitChimmy! DamnitChi                               
+              mmy!DamnitChimmy!Da   mnitChimmy!DamnitChim                               
+             my!DamnitChimmy!DamnitChimmy!DamnitC  himmy                                
+            !Damn          itChimmy!DamnitChi     mmy!Da                                
+           mnitC                      himmy!D     amnitC                                
+          himmy!                                 Damnit                                 
+         Chimmy                                 !Damni                                  
+        tChimm                                  y!Damn                                  
+        itChi                      mmy!        Damnit                                   
+        Chim                      my!Da mni   tChimm                                    
+        y!Da                      mnitChimmy  !Damn                         itChimmy!   
+       Damni                      tChimmy!D  amnit                        Chimmy!Damni  
+       tChim                     my!DamnitC himmy                       !Damni    tChi  
+       mmy!D                     amnitChim  my!Da                     mnitChi    mmy!D  
+       amnit                    Chimmy!Da  mnitCh                   immy!Da     mnitC   
+       himmy                    !DamnitC   himmy!DamnitChimmy!D   amnitCh     immy!     
+        Damn                   itChimmy    !DamnitChimmy!DamnitChimmy!D      amnit      
+        Chim                   my!Damn     itChi   mmy!D   amnitChimm      y!Damn       
+        itCh                  immy!Dam      nit   Chimmy!DamnitChim      my!Dam         
+        nitCh               immy! Damni         tChimmy!DamnitChim     my!Damn          
+         itCh             immy!  DamnitC         himmy!DamnitChimmy!   DamnitCh         
+         immy!            DamnitChimmy!D                     amnitChi    mmy!Damni      
+          tChim            my!DamnitChi              mmy!       Damnit  Chim my!Da      
+          mnitCh              immy                   !Dam        nitChi  mmy!Damn       
+           itChim                                my!              Damni    tChi         
+            mmy!Damn                            itCh              immy!     Damn        
+               itChimm                          y!Da              mnitChimmy!Dam        
+     nit        Chimmy!Dam                       nitC           himmy!DamnitChi         
+    mmy!Dam    nitChimmy!DamnitC                  him         my!Damn    i              
+    tChimmy!Damnit Chimmy!DamnitChimmy!D           amni    tChimmy                      
+    !Dam nitChimmy!Damn    itChimmy!Damnit Chimmy!DamnitChimmy!D                        
+     amni  tChimmy!Da         mnitChimmy! DamnitChimmy!Damnit                           
+      Chim   my!Dam         nitChimmy!Da mnitC himmy!Damni                              
+       tChimmy!Da           mnitChimmy!  Damn                                           
+        itChimm              y!Damnit   Chim                                            
+          my!                Damnit    Chim                                             
+                              my!Dam  nitC                                              
+                               himmy!Damn                                               
+                                 itChimm                                                
+                                   y!D
+*/
